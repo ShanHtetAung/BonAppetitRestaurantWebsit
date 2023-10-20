@@ -1,0 +1,401 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'Julius Sans One';
+  font-weight: 400;
+  src: url('../font/JuliusSansOne-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Arial';
+  font-weight: 400;
+  src: url('../font/ARIAL.TTF');
+}
+
+@font-face {
+  font-family: 'MyriadPro-Regular';
+  src: url('../font/MyriadPro-Regular.otf');
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+a {
+  display: block;
+  color: #ffffff;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:hover {
+  transition: 0.8s;
+  -webkit-transition: 0.8s;
+  opacity: 0.8;
+}
+
+.wrap {
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+.cmn-inner {
+  margin: 0 auto;
+  max-width: 1281px;
+}
+
+.cmn-ttl {
+  line-height: 1.2;
+
+  font-size: 35px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.cmn-btn {
+  width: 312px;
+  padding: 22px 10px 17px;
+  border: 1px solid transparent;
+  background-color: #363636;
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.cmn-btn:hover {
+  border: 1px solid #363636;
+  background-color: #ffffff;
+  color: #363636;
+}
+
+p {
+  font-family: 'Arial', sans-serif;
+}
+
+/*MainVisual start */
+.sec-mv {
+  position: relative;
+  padding: 33px 0px 90px;
+  background: url('../img/img_mv_bg.png') no-repeat center/cover;
+}
+
+.sec-mv .header {
+  margin-bottom: 95px;
+  padding: 33px 0px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+}
+
+.sec-mv .header .header-logo {
+  position: absolute;
+  top: 0;
+  float: left;
+  padding: 47px 94px 46px 107px;
+  background: url('../img/img_poly.png') no-repeat center/cover;
+}
+
+.nav-menu {
+  float: right;
+}
+
+.nav-menu ul li {
+  position: relative;
+  float: left;
+  margin-right: 52px;
+}
+
+.nav-menu ul li:last-child {
+  margin-right: 0;
+}
+
+.nav-menu ul li a {
+  color: #636363;
+  font-family: 'MyriadPro-Regular';
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.nav-menu ul li a::after {
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+  width: 0%;
+  height: 3px;
+  background-color: #636363;
+  content: "";
+  transition: 0.5s;
+}
+
+.nav-menu ul li a:hover::after,
+.nav-menu ul .active::after {
+  width: 100%;
+}
+
+.mv-blk .txt-blk {
+  width: 606px;
+  padding: 48px 68px 58px;
+  border: 5px solid #ebebeb;
+}
+
+.mv-blk .txt-blk .mv-ttl {
+  line-height: 1.2;
+
+  font-size: 33px;
+  text-align: left;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.mv-blk .txt-blk p {
+  line-height: 1.6;
+  padding: 13px 3px;
+  color: rgb(0, 0, 0, .8);
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.65px;
+}
+
+/*sec-book-table start */
+.sec-book-table {
+  margin-top: 12px;
+  padding: 56px 0 40px;
+
+}
+
+.sec-book-table .img-blk {
+  float: left;
+  width: 62%;
+
+  margin-left: -25px;
+}
+
+.sec-book-table .txt-blk {
+  float: right;
+  width: 35%;
+
+}
+
+.sec-book-table .txt-blk .cmn-ttl {
+  padding-bottom: 30px;
+  text-align: left;
+}
+
+.sec-book-table .txt-blk p {
+  line-height: 1.65;
+  padding-bottom: 28px;
+  color: rgb(0, 0, 0, .8);
+  letter-spacing: 0.55px;
+
+}
+
+.sec-book-table .txt-blk .cmn-btn {
+  margin: 9px 4px 0;
+}
+
+/*sec-menu start */
+.sec-menu {
+  padding: 16px 0 80px;
+}
+
+.sec-menu-wave {
+  position: relative;
+  margin-bottom: 38px;
+  text-align: center;
+}
+
+.sec-menu-wave::before {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  width: 77%;
+  height: 2px;
+  margin: 0 auto;
+  background-color: #000000;
+  content: '';
+  transform: translateY(-50%);
+}
+
+.sec-menu-wave span{
+  padding: 0 48px;
+  background-color: #ffffff;
+}
+
+.sec-menu .menu-container {
+  padding-top: 73px;
+}
+
+.sec-menu .menu-container li {
+  float: left;
+  width: 47.1%;
+  margin-right: 5.7%;
+  margin-bottom: 43px;
+}
+
+.sec-menu .menu-container li:nth-child(2n) {
+  margin-right: 0;
+}
+
+.menu-card .menu-img {
+  float: left;
+  width: 28%;
+}
+
+.menu-card .menu-txt-blk {
+  float: right;
+  width: 67%;
+}
+
+.menu-txt-blk .menu-ttl {
+  padding-bottom: 14px;
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+
+.menu-txt-blk p {
+  line-height: 1.85;
+  color: rgb(0, 0, 0, .8);
+  letter-spacing: 0.44px;
+}
+
+.sec-menu .cmn-btn {
+  margin: 0 auto;
+}
+
+/*sec-chef start */
+.sec-chefs {
+  padding: 38px 0 45px;
+  background: url('../img/img_chef_bg.jpg') no-repeat center/cover;
+}
+
+.sec-chefs .chef-lists {
+  padding-top: 28px;
+}
+
+.chef-lists li {
+  float: left;
+  width: 29.3%;
+  margin-right: 6%;
+  text-align: center;
+}
+
+.chef-lists li:nth-child(3n) {
+  margin-right: 0;
+}
+
+.chef-lists li .chef-name {
+  padding: 40px 0 31px;
+  font-size: 28px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.chef-lists li .chef-name span {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.65px;
+}
+
+.chef-lists li p {
+  line-height: 1.55;
+  color: rgb(0, 0, 0, .8);
+  letter-spacing: 0.8px;
+}
+
+/*sec-blog start */
+.sec-blog {
+  padding: 102px 0 78px;
+  background: url(../img/img_blog_bg.png) no-repeat center/cover;
+}
+
+.blog-container {
+  padding: 32px 0 40px;
+}
+
+.blog-container li {
+  position: relative;
+  float: left;
+  width: 29.3%;
+  margin-right: 6%;
+}
+
+.blog-container li:nth-child(3n) {
+  margin-right: 0;
+}
+
+.blog-card .blog-txt {
+  position: absolute;
+  top: 34%;
+  width: 100%;
+  background-color: rgb(124, 127, 128, .8);
+  text-align: center;
+
+}
+
+.blog-txt p {
+  line-height: 1.35;
+  padding: 10px 40px;
+  color: #fff;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.sec-blog .btn-list {
+  width: 270px;
+  margin: 0 auto;
+}
+
+.sec-blog .btn-list li {
+  float: left;
+  margin-right: 30px;
+}
+
+.sec-blog .btn-list li:last-child {
+  margin-right: 0;
+}
+
+.sec-blog .btn-list li a {
+  width: 120px;
+  padding: 12px 10px;
+  background-color: rgba(115, 99, 87, 0.3);
+  text-align: center;
+}
+
+.sec-blog .btn-list li a:hover {
+  background-color: #363636;
+}
+
+
+/* Footer Section */
+.footer {
+  line-height: 1.58;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer .site-info {
+  padding: 30px 0 44px;
+  background-color: #2b2a2a;
+}
+
+.footer .site-info p {
+  padding-top: 30px;
+  letter-spacing: 0.7px;
+}
+
+.footer .copyright {
+  padding: 32px 0 33px;
+  background-color: #252525;
+  letter-spacing: 0.9px;
+}
